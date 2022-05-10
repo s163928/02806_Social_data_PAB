@@ -28,28 +28,43 @@
 	<section id="three" class="main style1 special">
 		<div class="container">
 			<header class="major">
-				<h2>Introducing the data!</h2>
+				<h2>Introducing the Data!</h2>
 			</header>
-			<p>
-				According to the Bureau of International Reycling, recycling is a $200 billion industry. With recycling
-				being perceived as a governmental responsibility, instead of a personal one, around 21.2 million tons of
-				recyclable waste goes unrecycled every year. Around 300 million tons of plastic are produced every year
-				with only 91% being recycled.
-			</p>
-			<p>
-				This quite clearly illustrates that recycling is far more important that most people are inclined to
-				believe. It not only helps conserve natural resources but also reduces toxic wastes and environmental
-				pollution, all of which enhance the long run sustainability of our world. Plastic bottles can be reused
-				as carpets, clothing, auto parts, just to name a few. This is also why it has become part of the 17
-				Sustainable Development Goals established by the UN as goal number 12, responsible consumption and
-				production. While we are recycling more materials than ever before, the numbers are slowing down
-				according to the United States Environmental Protection Agency (EPA)
-			</p>
+
+			<div class="row gtr-150">
+				<div class="col-8 col-12-medium">
+					<p>
+						According to the Bureau of International Recycling, recycling is a $200 billion industry. With
+						recycling being perceived as a governmental responsibility, instead of a personal one, around
+						21.2 million tons of recyclable waste goes unrecycled every year. Around 300 million tons of
+						plastic are produced every year with only 91% being recycled <a
+							href="https://blog.repurpose.global/recycling-facts-from-around-the-world/#:~:text=Recycling%20is%20a%20%24200%20billion,the%20Bureau%20of%20International%20Recycling">[1]</a>.
+					</p>
+					<p>
+						This quite clearly illustrates that recycling is far more important that most people are
+						inclined to believe. It not only helps conserve natural resources but also reduces toxic wastes
+						and environmental pollution, all of which enhance the long run sustainability of our world.
+						Plastic bottles can be reused as carpets, clothing, auto parts, just to name a few. This is also
+						why it has become part of the 17 Sustainable Development Goals established by the UN as goal
+						number 12, responsible consumption and production. While we are recycling more materials than
+						ever before, the numbers are slowing down according to the United States Environmental
+						Protection Agency (EPA) <a
+							href="https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/national-overview-facts-and-figures-materials#:~:text=Over%20time%2C%20recycling%20and%20composting,to%2032.1%20percent%20in%202018">[2]</a>.
+						.
+					</p>
+				</div>
+				<div class="col-4 col-12-medium">
+					<span class="image fit"><img src="images/Intro_image.PNG" alt="" /></span>
+				</div>
+			</div>
+			<p></p>
 			<p>
 				New York alone produces around 3.2 million tons of trash, with infrastructure to handle it being a major
-				concern. There have been many cases of illegal trash dumping causing outrage among the city’s citizens.
-				As you might therefore imagine, the city recycles only about a fifth of it’s garbage. Around 25 percent
-				from businesses and 18 percent domestic waste.
+				concern. There have been many cases of illegal trash dumping causing outrage among the city’s citizens
+				<a href="https://www.citysignal.com/what-a-waste-new-york-citys-trash-and-recycling/">[3]</a>.
+				As you might therefore imagine, the city recycles only about a fifth of its garbage. Around 25 % from
+				businesses and 18 % domestic waste <a
+					href="https://www.nytimes.com/2020/01/29/nyregion/nyc-recycling.html">[4]</a>.
 				According to mayoral spokesperson Kate Smart, the mayor of New York city is committed to implement
 				creative solutions to reach its sustainability goals of nearly zero-ing out residential waste by the
 				year 2030. “To fully address climate change, we must significantly reduce New York City’s waste in an
@@ -57,22 +72,23 @@
 				Department of Sanitation in 2017, more than two-thirds of domestic waste could be diverted from
 				landfills and incinerators if New Yorkers meet their recycling potential. Meanwhile Council Member Chi
 				Ossé comments on the fact that recycling isn’t only an environmental issues “this is a racial justice
-				issue; and just like the mayor’s favorite two words — this is a public safety issue.
+				issue; and just like the mayor’s favorite two words — this is a public safety issue,” <a
+					href="https://www.politico.com/news/2022/04/22/zero-waste-new-yorkers-recycle-00026708">[5]</a>.
 			</p>
-
 			<p>
 				But with New York being notorious for its recycling infrastructure, who are those that actually do so?
 				And who are those that don’t? Those that don’t recycle could be faced with a lack of incentive,
 				knowledge, infrastructure or time. But do things like ethnicity, gender and income affect these
-				behavioral patterns? How much do the number of recycling bins in one’s surrounding or population density
-				affect how much a person recycles?
+				behavioral patterns? How much does the number of recycling bins in one’s surrounding or population
+				density affect how much a person recycles?
+				By analyzing data from NYC Open Data <a href="https://opendata.cityofnewyork.us/">[6]</a> we hope to be
+				able to answer the question “Which societal factors impact recycling patterns?”. We hope to figure out
+				where education or environment changes would lead to the biggest impact in recycling behavior.
 			</p>
-
 			<p>
-				By analyzing data from NYC Open Data the question “Which societal factors impact recycling patterns?” We
-				hope to figure out where education or environment changes would lead to the biggest impact in recycling
-				behavior.
 
+			</p>
+			<p>
 				So. Who is it that recycles?
 			</p>
 		</div>
@@ -82,154 +98,282 @@
 	<section id="three" class="main style1 special">
 		<div class="container">
 			<header class="major">
-				<h2>Getting into it</h2>
+				<h2>Getting Into It</h2>
 			</header>
 
+			<p>
+				In order to best be able to see which societal factors impact recycling patterns the ideal dataset would
+				include individual people's information. Unfortunately such data is hard to come across. The data we are
+				going to be looking at is divided into 5 of New York boroughs being Bronx, Brooklyn, Manhattan, Queens
+				and Staten Island. The main societal factors that we will be investigating are gender, ethnicity and
+				income.
+			</p>
+			<h3>
+				NYC’s Men and Women
+			</h3>
+			<p>
+				Let’s dive in to see the basic statistics of our New York City data by first looking at the gender
+				ratios in New York City. Note that there are only records of two genders in the given dataset. In the
+				city as a whole, there is not a big difference in the number of men and women. The number of men is
+				around 9.6 million while the number of women is around 10.2 million. The statistics for each borough can
+				be seen on figure INSERT FIGURE NUMBER. It shows that the amount of men and women are quite similar,
+				with the female population being slightly greater than mens. Since the numbers in the given dataset are
+				so close, it will be difficult to pinpoint the impact each gender has on recycling patterns, even though
+				there might be significant differences.
+			</p>
+			<span style="width: 50%; display: block; margin-left: auto; margin-right: auto;" class="image fit"><img
+					src="images/men_women_total_number_borough.png" alt="" /></span>
+			<p></p>
+			<p>
+				By diving deep into the gender aspect, we can check whether or not there is a significant difference in
+				the income between men and women, that could impact their recycling patterns. A graph comparing the
+				median household income between men and women can be seen on figure INSERT FIGURE NUMBER. Even though
+				there are some differences, there is nothing major to noise. Based on the discoveries of gender count
+				and income in the given dataset, gender won’t be considered as a major factor when analyzing the data
+				further.
+			</p>
+			<span style="width: 70%; display: block; margin-left: auto; margin-right: auto;" class="image fit"><img
+					src="images/female_male_income.png" alt="" /></span>
+			<p></p>
+			<h3>
+				The Diverse People of NYC
+			</h3>
+			<p>
+				New York is filled with different ethnicities with Hispanic, White, Black and Asian people being the
+				majority. This can be seen on figure INSERT FIGURE NUMBER. It is interesting to notice the rather major
+				gaps between the number of people from different ethnicities living in the city. With people of white
+				ethnicity being the predominant one and asian ethnicity the least common one, if we exclude native and
+				pacific, which are nearly zero percent.
+			</p>
+			<p>
+				It is even more interesting to look at the difference in ethnicity count between boroughs. This can be
+				seen on figure INSERT FIGURE NUMBER. In Brooklyn, Manhattan and Staten Island, people of white
+				ethnicities are a majority. In some of them, by far. You can see that 60% of the people on Staten Island
+				are white and close to 50% of people are white in Manhattan. In the Queens however, people of hispanic
+				ethnicity are a majority. The same goes for the Bronx but here under 10% of the population is white.
+				Having these major differences between each borough makes it much easier to investigate the impact that
+				ethnicities have in recycling patterns, than e.g. with the gender data as mentioned earlier.
 
+			</p>
 			<div class="row gtr-150">
 				<div class="col-6 col-12-medium">
-					<p>
-						Let’s dive in to see the basic statistics of our New York City data. The first interesting thing
-						to
-						notice is that there is a big difference in the number of people from different ethnicities
-						living in
-						the city. With people of white ethnicity being the predominant one and asian ethnicity the least
-						common
-						one, if we exclude native and pacific, which are nearly zero percent.
-					</p>
 					<span class="image fit"><img src="images/ethnicity_percantage_NYC.png" alt="" /></span>
-
 				</div>
 				<div class="col-6 col-12-medium">
-					<p>
-						It is even more interesting to look at the difference in ethnicity count between boroughs. In
-						Brooklyn,
-						Manhattan and Staten Island, people of white ethnicities are a majority. In the Bronx and Queens
-						however, people of hispanic ethnicity are a majority. In some of them, by far. You can see that
-						60% of
-						the people on Staten Island are white and close to 50% of people are white in Manhattan.
-					</p>
 					<span class="image fit"><img src="images/ethnicity_percantage_NYC_boroughs.png" alt="" /></span>
 				</div>
 			</div>
-
-			<div class="container">
-				<div class="row gtr-150">
-					<div class="col-6 col-12-medium">
-						<header class="major">
-							<h3>Lorem ipsum dolor adipiscing<br />
-								amet dolor consequat</h3>
-						</header>
-						<p>
-							What about gender ratios in New York City? In the city as a whole, there is not a big
-							difference
-							in the number of men and women. In fact, as you can see in [insert something to describe
-							where
-							you can see the plot], the number of men is a little less than 10,000,000 while the number
-							of
-							women is a little above this number. Looking at the statistics for different boroughs, the
-							numbers look similar, with the female population being slightly greater than men.
-						</p>
-					</div>
-					<div class="col-6 col-12-medium imp-medium">
-						<span class="image fit"><img src="images/men_women_total_number.png" alt="" /></span>
-					</div>
-					<div class="col-6 col-12-medium imp-medium">
-						<span class="image fit"><img src="images/men_women_total_number_borough.png" alt="" /></span>
-					</div>
-				</div>
-			</div>
+			<p></p>
+			<p>
+				As shown on figure INSERT FIGURE NUMBER there is clearly a different overall pattern in income.
+				Especially in the section with very high income it is clear to see that there are more white people than
+				hispanic people. This could therefore be an important factor to keep in mind later on. Here the decision
+				of comparing these two ethnicities was due to the fact that they are the two ethnicities that are
+				dominant in the neighborhoods. White people are predominant in three; Brooklyn, Manhattan and Staten
+				Island, while Hispanic people are predominant in The Bronx and slightly in Queens.
+			</p>
+			<span style="width: 70%; display: block; margin-left: auto; margin-right: auto;" class="image fit"><img
+					src="images/white_hispanic_income.png" alt="" /></span>
+		</div>
 	</section>
 
 	<!-- What a waste! -->
 	<section id="three" class="main style1 special">
 		<div class="container">
 			<header class="major">
-				<h2>What a waste!</h2>
+				<h2>What a Waste!</h2>
 			</header>
-
 			<p>
-				We already discussed how the city looks in terms of distribution of different ethnicites and genders in
-				different boroughs as well as the city as a whole. But what about recycling? Are any of the social
+				We already discussed how the city looks in terms of distribution of different ethnicities and
+				genders in
+				different boroughs as well as the city as a whole. But what about recycling? Are any of the
+				social
 				factors we have discussed affecting the amount of recycling is done in each borough?
-
 			</p>
+
 			<div class="row gtr-150">
-				<div class="col-6 col-12-medium">
+				<div class="col-7 col-12-medium">
+
+
 					<p>
-						TODO
+						Figure [figure number] shows the different recycling rates for each borough. To give a bit more
+						insight
+						into the data we are looking at, let’s understand what this all is showing. The diversion rate
+						shows the
+						fraction of waste that is recycled of all waste in the city’s stream. The capture rates however,
+						show
+						that fraction of what is recycled of that which is captured. So paper diversion rate is total
+						recycled
+						paper divided by maximum paper in the city's stream. Others refers to a mixture of metal, glass,
+						plastic
+						and beverage cartons. The totals is the mean of the two other capture rates.
+					</p>
+					<p>
+						Before we are able to connect social factors with peoples recycling patterns, we also have to
+						take into
+						account that it might physically be possible for them to recycle. Many people might not have a
+						car and
+						find it difficult to transport their waste to a recycling station or bin from their home.
+						Especially if
+						the distance is very large. Looking into each borough and their recycling bins, we find that
+						there are
+						most bins placed in Brooklyn and fewest bins placed in Staten Island. This can be seen in figure
+						INSERT
+						FIGURE NUMBER. The amount of bins that Brooklyn has is almost 5 times more. The distance between
+						each
+						bin should also be accounted for and that can be seen on figure INSERT FIGURE NUMBER. This shows
+						that
+						Staten Island still has the largest distance to a bin, however it shows that Manhattan and not
+						Brooklyn
+						has the shortest distance between bins.
 					</p>
 				</div>
-				<div class="col-6 col-12-medium">
+				<div class="col-5 col-12-medium">
 					<span class="image fit"><img src="images/recycling_rates_NYC_boroughs.png" alt="" /></span>
 				</div>
-				<div class="col-5 col-12-medium">
-					<p>
-						TODO
-					</p>
-				</div>
-				<div class="col-7 col-12-medium">
+			</div>
+
+			<!--
+			<span style="width: 50%; display: block; margin-left: auto; margin-right: auto;" class="image fit"><img
+					src="images/recycling_rates_NYC_boroughs.png" alt="" /></span>
+			-->
+
+
+			<p>
+				In order to get an idea if there are too many pins placed in a borough, we need to look at the
+				population density for each borough. This can be seen on figure INSERT FIGURE NUMBER. From this we see
+				that the bin density and the population density has a nice correlation in each borough. This means that
+				the amount of bins and their placement should give the people in each borough a fairly similar
+				opportunity to recycle.
+			</p>
+
+			<p>
+				However it shows that Staten Island has the highest recycling rate of all of the boroughs, but the
+				fewest number of recycling bins and fewest number of people. This raises the question of whether people
+				on Staten Island go out of their way to recycle, if the environment makes it relatively easier for them
+				or if the social factors have the biggest impact? Perhaps people in Staten Island are more likely to
+				have a car which they utilize when dropping recyclables off? As mentioned earlier Staten Island is also
+				the borough with the highest ratio of white people with just above 60% of the population.
+			</p>
+
+			<div class="row gtr-150">
+				<div class="col-6 col-12-medium">
 					<span class="image fit"><img src="images/borough_bin_density.png" alt="" /></span>
 				</div>
-				<div class="col-7 col-12-medium">
+				<div class="col-6 col-12-medium">
 					<span class="image fit"><img src="images/borough_population_density.png" alt="" /></span>
 				</div>
-				<div class="col-5 col-12-medium">
-					<p>
-						TODO
-					</p>
-				</div>
-				<div class="col-7 col-12-medium">
-					<span class="image fit"><img src="images/recycling_bins_boroughs.png" alt="" /></span>
-				</div>
-				<div class="col-5 col-12-medium">
-					<p>
-						TODO
-					</p>
-				</div>
 			</div>
+			<p></p>
+			<p>
+				The borough with the lowest recycling rate is Bronx, where over half of the people living there are
+				hispanic. The Bronx has a relatively average amount of recycling bins and bin density, so why ain’t the
+				people living there not as good at recycling as Staten Island? Again the environment factors such as
+				owning a car might be a significant factor.
+			</p>
+
+			<p>
+				The borough with the highest number of bins per square meter is Manhattan, but Manhattan comes third of
+				the boroughs when comparing the recycling rates. This might show that even though they seem to have the
+				best opportunities to recycle, other factors most clearly have an impact on people’s recycling patterns.
+			</p>
+
+
+			<iframe style="width: 70%; height: 950px; display: block; margin-left: auto; margin-right: auto;"
+				src="bokeh/diversion_over_time.html"></iframe>
 	</section>
 
 	<!-- Let’s talk money -->
 	<section id="three" class="main style1 special">
 		<div class="container">
 			<header class="major">
-				<h2>Let’s talk money</h2>
+				<h2>Let’s Talk Money</h2>
 			</header>
 
 			<p>
-				TODO
+				We’re throwing money into the equation. Now we know that Staten Island recycles a bunch, but the Bronx
+				does less, and that there is a difference in ethnicity ratios in these boroughs. We also know that
+				having more recycle bins does not necessarily cause people to recycle more. If we look at the income per
+				capita between boroughs, Manhattan has the highest number by far, they also had the most recycling bins,
+				but they land in the middle of the boroughs when we compare the recycling rates. Manhattan has the
+				second highest ratio of people of white ethnicity, or a little below 50%. The Bronx has the lowest
+				income per capita. As discussed above, Bronx is also the borough with the highest ratio of people from
+				hispanic ethnicity, and the only borough where people from hispanic ethnicity are a majority. The Bronx
+				was also the borough with the lowest recycling rate.
+			</p>
+			<span style="width: 50%; display: block; margin-left: auto; margin-right: auto;" class="image fit"><img
+					src="images/income_per_capita_boroughs.png" alt="" /></span>
+			<p></p>
+			<p>
+				What does this all mean? Is there a correlation between income, recycling and ethnicity? Is it possible
+				to predict income, based on the factors discussed? We trained a machine learning model to predict the
+				total income per capita based on factors seen in [insert something to cite the feature importance plot].
+				Here, you can see that being of white ethnicity is the most important deciding factor on your total
+				income. Our model predicted the total income, based on these features, with around 80% accuracy.
+			</p>
+			<p>
+				When looking at the correlation between ethnicity, recycling rates, income, bin density and more, it
+				becomes evident that being white is positively correlated with your income. Furthermore, being white is
+				positively correlated with all the metrics used to measure recycling. The density of bins per square
+				meter is also positively correlated with the total income per capita. However, the density of bins is
+				not positively correlated with the recycling metrics, meaning that having more bins per square meter
+				does not cause people to recycle more.
+			</p>
+
+			<span style="width: 60%; display: block; margin-left: auto; margin-right: auto;" class="image fit"><img
+					src="images/feature_importance.png" alt="" /></span>
+	</section>
+
+	<!-- Key Takeaways -->
+	<section id="three" class="main style1 special">
+		<div class="container">
+			<header class="major">
+				<h2>Key Takeaways</h2>
+			</header>
+
+			<p>
+				But what does this mean? Does being of white ethnicity directly impact how much you recycle? Or
+				how much
+				money you make? Can people really impact how much they recycle, or is their ability to recycle
+				decided
+				by social factors they can not really impact themselves?
 			</p>
 			<div class="row gtr-150">
 				<div class="col-6 col-12-medium">
+
 					<p>
-						TODO
+						All we know is that it’s not equally likely that you recycle if you have high income versus low
+						income.
+						Whether that income is directly affecting your ability to recycle is a complicated question and
+						a lot of
+						other factors might be affecting the result. How about gender? We proved that there was a
+						statistical
+						difference in the income for men and women. Does being born female decrease your likelihood of a
+						higher
+						salary? According to the numbers, it does. What about ethnicity? We proved that there is a
+						statistical
+						difference in the total income for people of white ethnicity and people of asian ethnicity.
+						Again,
+						according to the numbers, ethnicity does directly impact your likelihood of higher salary.
+					</p>
+					<p>
+						Recycling can be a privilege. If you have a job that pays well, you can afford to live in a more
+						expensive place in the city. A more expensive place in the city results in a higher number of
+						recycling
+						bins per capita, making it easier for you to run to the next recycling bin. It’s important that
+						recycling is made easy for everyone, by increasing the number of recycling bins in low-income
+						areas of
+						the city.
 					</p>
 				</div>
 				<div class="col-6 col-12-medium">
-					<span class="image fit"><img src="images/female_male_income.png" alt="" /></span>
-				</div>
-				<div class="col-6 col-12-medium">
-					<p>
-						TODO
-					</p>
-				</div>
-				<div class="col-6 col-12-medium">
-					<span class="image fit"><img src="images/white_hispanic_income.png" alt="" /></span>
-				</div>
-				<div class="col-6 col-12-medium">
-					<p>
-						TODO
-					</p>
-				</div>
-				<div class="col-6 col-12-medium">
-					<span class="image fit"><img src="images/income_per_capita_boroughs.png" alt="" /></span>
+					<iframe style="height: 700px; width: 100%; " src="bokeh/bokeh_advance_plot.html"></iframe>
 				</div>
 			</div>
 	</section>
 
-	<iframe style="height: 700px; width: 100%;" src="bokeh/bokeh_advance_plot.html"></iframe>
-	<iframe style="width: 100%; height: 950px;" src="bokeh/diversion_over_time.html"></iframe>
+
+
 	<!-- One
 	<section id="one" class="main style1">
 		<div class="container">
@@ -578,8 +722,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<li><a href="https://github.com/s163928/02806_Social_data_PAB.github.io"
 					class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 		</ul>
-		<ul class="copyright">
-			<li>&copy; Untitled</li>
+		<ul style="color: white;" class="copyright">
 			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 		</ul>
 	</section>

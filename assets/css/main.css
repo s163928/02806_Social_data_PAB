@@ -193,7 +193,7 @@ body,
 input,
 select,
 textarea {
-	color: #333333;
+	color: #000000;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 16pt;
 	font-weight: 300;
@@ -230,13 +230,20 @@ p {
 	margin: 0 0 2em 0;
 }
 
+h3 {
+	color: #000;
+	font-weight: 390;
+	line-height: 1em;
+	margin: 0 0 1em 0;
+}
+
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
-	color: #555;
+	color: #333;
+	font-weight: 390;
 	line-height: 1em;
 	margin: 0 0 1em 0;
 }
@@ -2386,6 +2393,7 @@ input[type="radio"]+label:before {
 	text-decoration: none;
 	border-bottom: none;
 	position: relative;
+	color: white;
 }
 
 .icon:before {
@@ -3045,7 +3053,7 @@ button:disabled,
 	padding: 5em 0 5em 0;
 	background-color: #4686a0;
 	color: rgba(255, 255, 255, 0.75);
-	background-attachment: fixed, fixed, fixed;
+	background-attachment: auto, fixed, fixed;
 	background-image: url("images/overlay2.png"), url("../../images/header.jpg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 	background-position: top left, center center, center center;
 	background-size: auto, cover, cover;
