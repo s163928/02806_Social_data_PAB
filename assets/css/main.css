@@ -354,6 +354,11 @@ pre code {
 	width: 70em;
 }
 
+.container p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 .container.xsmall {
 	width: 15em;
 }
@@ -2932,6 +2937,7 @@ button:disabled,
 
 .main {
 	padding: 1em 0 1em 0;
+
 }
 
 .main.style1 {
