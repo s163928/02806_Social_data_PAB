@@ -1,0 +1,86 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="d038bf41-dbb8-4372-82e7-65c886447fdd" data-root-id="6190"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="6331">
+          {"65f711e2-536e-48ff-a496-6e992fdb44f6":{"defs":[],"roots":{"references":[{"attributes":{"tabs":[{"id":"6187"},{"id":"6188"},{"id":"6189"}]},"id":"6190","type":"Tabs"},{"attributes":{"child":{"id":"6185"},"title":"Average Total Recycle [%]"},"id":"6188","type":"Panel"},{"attributes":{"text":"&lt;iframe src=AverageTotalRecucle.html style='min-width:600px; height: 600px'&gt;&lt;iframe&gt;"},"id":"6185","type":"Div"},{"attributes":{"child":{"id":"6184"},"title":"Median Household Income Per Capita [$]"},"id":"6187","type":"Panel"},{"attributes":{"child":{"id":"6186"},"title":"Total Population Count"},"id":"6189","type":"Panel"},{"attributes":{"text":"&lt;iframe src=TotalPopulationCount.html style='min-width:600px; height: 600px'&gt;&lt;iframe&gt;"},"id":"6186","type":"Div"},{"attributes":{"text":"&lt;iframe src=IncomePerCapita.html style='min-width:600px; height: 600px'&gt;&lt;iframe&gt;"},"id":"6184","type":"Div"}],"root_ids":["6190"]},"title":"Bokeh Application","version":"2.4.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('6331').textContent;
+                  const render_items = [{"docid":"65f711e2-536e-48ff-a496-6e992fdb44f6","root_ids":["6190"],"roots":{"6190":"d038bf41-dbb8-4372-82e7-65c886447fdd"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
