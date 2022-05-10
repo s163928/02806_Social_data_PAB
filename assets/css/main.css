@@ -2949,7 +2949,7 @@ button:disabled,
 }
 
 .main.style1 {
-	background: #fff;
+	background: rgb(255, 255, 255);
 }
 
 .main.style2 {
@@ -3051,12 +3051,12 @@ button:disabled,
 
 #header {
 	padding: 5em 0 5em 0;
-	background-color: #4686a0;
+	background-image: url("../../images/header.jpg");
+	background-size: 100vw 100vh;
+	height: 100vh;
+	background-repeat: no-repeat;
+
 	color: rgba(255, 255, 255, 0.75);
-	background-attachment: auto, fixed, fixed;
-	background-image: url("images/overlay2.png"), url("../../images/header.jpg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
-	background-position: top left, center center, center center;
-	background-size: auto, cover, cover;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
@@ -3151,6 +3151,8 @@ button:disabled,
 
 #header h1 {
 	margin: 0;
+	font-weight: 400;
+	font-size: 60px;
 }
 
 #header p {
@@ -3197,6 +3199,7 @@ button:disabled,
 	opacity: 1;
 	position: relative;
 	z-index: 1;
+
 }
 
 #header .inner .actions {
